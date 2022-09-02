@@ -22,8 +22,8 @@ const SignIn = () => {
   const auth = useSelector((state) => state.auth);
   const dispatch = useDispatch();
   const [creds, setCreds] = useState({
-    email: "",
-    password: "",
+    email: "test@test.com",
+    password: "test1234",
   });
 
   const handleSubmit = (e) => {
@@ -43,6 +43,7 @@ const SignIn = () => {
         onSubmit={handleSubmit}
       >
         <Typography variant="h5">Sign In</Typography>
+        <p>Default email: test@test.com, password: test1234</p>
         <TextField
           className={classes.spacing}
           id="enter-email"
@@ -56,7 +57,7 @@ const SignIn = () => {
           className={classes.spacing}
           id="enter-password"
           type="password"
-          label="Enter password"
+          label="Enter password (minimum of 6 characters)"
           variant="outlined"
           fullWidth
           value={creds.password}
