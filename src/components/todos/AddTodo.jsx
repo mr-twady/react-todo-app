@@ -62,7 +62,7 @@ const AddTodo = ({ todo, setTodo }) => {
                     onChange = {(e) => setTodo({...todo, name: e.target.value})}
                 />
                 <Button variant="contained" color="primary" className = {classes.submitButton} type="submit">
-                    Add <AddIcon fontSize="small"/>
+                    Save <AddIcon fontSize="small"/>
                 </Button>
             </form>
         </>
