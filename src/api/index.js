@@ -1,4 +1,4 @@
-export const url = process.env.TODO_APP_API_URL || "http://localhost:3000/api";
+export const url = "https://todo-app-dunsin.herokuapp.com/api";
 
 export const setHeaders = () => {
   const headers = {
